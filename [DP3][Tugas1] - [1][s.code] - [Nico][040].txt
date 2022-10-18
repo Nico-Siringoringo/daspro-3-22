@@ -1,0 +1,23 @@
+program soal_1;
+uses crt;
+var
+a,b,c : integer;
+begin
+clrscr;
+  write('Masukkan bilangan 1 : '); readln(a);
+  write('Masukkan bilangan 2 : '); readln(b);
+  write('Masukkan bilangan 3 : '); readln(c);
+  if (a<b) and (a<c) and (b<c) then
+    write('Urutan : ',a,' ',b,' ',c)
+  else if (a<b) and (a<c) and (b>c) then
+    write('Urutan : ',a,' ',c,' ',b)
+  else if (a>b) and (a>c) and (b>c) then
+    write('Urutan : ',c,' ',b,' ',a)
+  else if (a>b) and (a>c) and (b<c) then
+    write('Urutan : ',b,' ',c,' ',a)
+  else if (a>b) and (a<c) and (b<c) then
+    write('Urutan : ',b,' ',a,' ',c)
+  else if (a<b) and (a>c) and (b>c) then
+    write('Urutan : ',c,' ',a,' ',b);
+readln();
+end.
