@@ -1,0 +1,17 @@
+program Tangga;
+uses crt, math;
+var 
+tinggi, sudut : integer;
+begin
+clrscr;
+
+write('Input tinggi (cm) : '); readln(tinggi);
+write('Input sudut  (°)  : '); readln(sudut);
+
+if (tinggi >= 1) and (tinggi <= 10000) and (sudut >= 1) and (sudut <= 89) then
+     writeln('Panjang tangga : ',ceil(tinggi/sin(degtorad(sudut))),' cm')
+else 
+     halt;
+
+readln;
+end.
